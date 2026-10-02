@@ -1,0 +1,17 @@
+[project]
+name = "ibkr-paper-trading-bot"
+version = "0.1.0"
+description = "Phase 1 local paper-trading scaffold. No live broker connection."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "tsangwailok" }]
+
+[project.scripts]
+ibkr-paper = "ibkr_paper.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
